@@ -1,6 +1,6 @@
 # MEMS Windows Software Installation
 
-**Note that this is NOT the software currently being used in LOUD.  This is the Windows-only MEMS code that we purchased from Mirrorcle when we bought the mirrors.  For MEMS in LOUD software instructions, see [the MEMS_ctrl repo](https://github.com/CosmiQuantum/MEMS_Ctrl), which sends serial commands from the linux servers.  I highly discourage you from following these directions unless there are features you know you want here (notably: control over mirror speed).**
+**Note that this is NOT the software currently being used in LOUD.  This is the Windows-only MEMS code that we purchased from Mirrorcle when we bought the mirrors.  For MEMS in LOUD software instructions, see [the MEMS_ctrl repo](https://github.com/CosmiQuantum/MEMS_Ctrl), which sends serial commands from the linux servers.  I highly discourage you from following these directions unless there are features you know you want from here (notably: control over mirror speed).**
 
 #### Software Development Package (SDK)
 Github says that the software package is too large to upload as a zip file.  Instead, it can be found:
