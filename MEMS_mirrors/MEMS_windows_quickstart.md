@@ -6,11 +6,13 @@
 1. Open the app "Anaconda Prompt"
 2. Navigate to filepath ``C:\MirrorcleTech\SDK-Python``
 Guide to command prompt navigation:
+
 | Desired Action    | Terminal Command |
 | -------- | ------- |
 | Go back a directory | ``cd ..`` |
 | Enter a directory | ``cd folderName`` |
 | List contents of a directory | ``dir`` |
+
 * Note that when you open Anaconda prompt, you will likely start off with the initial filepath ``C:\Users\darkMatter``
 * From here, you should use the command  ``cd ../../MirrorcleTech/SDK-Python``
 
