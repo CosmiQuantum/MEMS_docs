@@ -2,6 +2,11 @@
 
 The [confluence page](https://confluence.qscience.org/display/1HTCSA/LOUD+Qubit+Information) should contain the most up-to-date information.  I'm copying some documentation here for the sake of completion & find-ability.
 
+|                          |                         |                         |
+:-------------------------:|:-------------------------:|:-------------------------:
+| <img height="180" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/bc01cb06-8b94-4959-ab34-de290878caa0"> | <img height="180" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/c71f7d0a-e513-4b45-ac43-4b674dfc5dca"> | <img height="180" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/2efcfc5b-703d-4490-a971-24898f2d396e"> |
+
+
 **Chip sent from:** Robert McDermott, University of Wisconsin
 
 **Description:** 6-qubit, transmon, flux tunable
