@@ -18,7 +18,7 @@ Guide to command prompt navigation:
 ```
 activate mems_env
 ```
-* If you did this correctly, it should say ``(memsenv)`` instead of ``(base)`` on the far left side of the command line
+* If you did this correctly, it should say ``(mems_env)`` instead of ``(base)`` on the far left side of the command line
 
 4. Make sure that MEMS driver box is plugged into the computer
 
