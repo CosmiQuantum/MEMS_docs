@@ -31,6 +31,7 @@ C:\MirrorcleTech\SDK-Cpp
 C:\MirrorcleTech\SDK-Python
 ```
 A second bonus location is found in ``Demo-Template.py``.  This is not as important, but if there is an error pulling values from the .ini file, then the python script will use these defaults.  So it;s probably best to have them be correct.
+<img width="400" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/391908c7-b190-42b6-9282-4ba51e2f29f6">
 
 6. Run a python script
 * The command to run the demo script is: ''python MTIDevice-Demo.py''
