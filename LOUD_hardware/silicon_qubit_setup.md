@@ -10,7 +10,7 @@ The [confluence page](https://confluence.qscience.org/display/1HTCSA/LOUD+Qubit+
 
 **Mounting hardware:**
 
-CAD for the vertical plate mount setup and the housing that allows the laser to target the qubit face of the chip can be found on the [LOUD Run 0 confluence page](https://confluence.qscience.org/display/1HTCSA/LOUD+Run+0) or on [Noah's github](https://github.com/DMQIS/MEMS-Files/tree/main/Qubit%20Shielding%20and%20Vertical%20Mounting%20(LOUD%40FNAL).  A slide deck with screenshots is can be found [here](https://docs.google.com/presentation/d/1sND7RMgMMk70a31Rg481XioxQ6hrN5_8RU9UVdVVe78/edit).
+CAD for the vertical plate mount setup and the housing that allows the laser to target the qubit face of the chip can be found on the [LOUD Run 0 confluence page](https://confluence.qscience.org/display/1HTCSA/LOUD+Run+0) or on [Noah's github](https://github.com/DMQIS/MEMS-Files/tree/main/Qubit%20Shielding%20and%20Vertical%20Mounting%20(LOUD%40FNAL)).  A slide deck with screenshots is can be found [here](https://docs.google.com/presentation/d/1sND7RMgMMk70a31Rg481XioxQ6hrN5_8RU9UVdVVe78/edit).
 
 Original housing CAD (from Sohair @ Wisconsin) will live in [Hannah's google drive](https://drive.google.com/drive/folders/1bIHQOvmc7aGEr-w6ycrQkU6Gjyfek3Ee?usp=sharing) until she runs out of storage. Modifications to the housing were made to allow for placement of Tedpella beryllium copper SEMCLIPS (part number 16399). The lid was modified to prevent interference with the clips, and to allow for a laser to target the face of the chip.
 
