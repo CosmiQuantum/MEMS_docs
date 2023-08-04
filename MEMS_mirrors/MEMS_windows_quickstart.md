@@ -16,7 +16,7 @@ Guide to command prompt navigation:
 
 3. Start up virtual environment using the command  
 ```
-activate memsenv
+activate mems_env
 ```
 * If you did this correctly, it should say ``(memsenv)`` instead of ``(base)`` on the far left side of the command line
 
