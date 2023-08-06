@@ -3,6 +3,7 @@
 ## Silicon Qubit Warm Setup
 #### Current Setup (as of 8/6/2023):
 **Diagram:**
+<img width="545" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/c876fbf8-30db-470e-8800-7bbbe340c72a">
 
 AWG
 * Agilent A33220
@@ -47,9 +48,11 @@ SMA/FCPC adapters
 #### Plans for Future Development
 **Diagram**
 Hannah add notes here!
+<img width="544" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/444f12ab-402b-4892-8c10-4dbc75d32beb">
 
 ## Cold setup
 **Diagram:**
+<img width="808" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/2554b214-269d-4c58-9ef0-332db169dfcc">
 
 SMA/SMA 100um core UVVIS optical patch cable
 * Accuglass part number 112548 ($190)
