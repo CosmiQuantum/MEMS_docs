@@ -4,6 +4,9 @@
 #### Current Setup (as of 8/6/2023):
 **Diagram:**
 
+<img width="700" alt="warm_setup" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/c876fbf8-30db-470e-8800-7bbbe340c72a">
+
+**Parts list**
 AWG
 * Agilent A33220
 * Control code linked [here](https://github.com/CosmiQuantum/MEMS_Ctrl)
@@ -48,8 +51,12 @@ SMA/FCPC adapters
 **Diagram**
 Hannah add notes here!
 
+<img width="700" alt="future_warm_setup" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/444f12ab-402b-4892-8c10-4dbc75d32beb">
+
 ## Cold setup
 **Diagram:**
+
+<img width="808" alt="cold_setup" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/2554b214-269d-4c58-9ef0-332db169dfcc">
 
 SMA/SMA 100um core UVVIS optical patch cable
 * Accuglass part number 112548 ($190)
@@ -65,7 +72,7 @@ SMA/SMA optical feedthroughs
 
 Copper Fridge Feedthrough Plate
 * Custom made from xometry ($173.44)
-* ***HANNAH LINK CAD!!!***
+* CAD file: on the [LOUD CAD confluence page](https://confluence.qscience.org/pages/viewpage.action?spaceKey=1HTCSA&title=CAD+Files)
 * Quote: https://drive.google.com/file/d/18JkAJzehZ1leWmbV_zOHlxQnQzcpN-mu/view?usp=sharing (listed as item \#10)
 * Quantity = 5
 
