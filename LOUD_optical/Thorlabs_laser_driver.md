@@ -19,7 +19,7 @@ It is possible to control the Thorlabs driver remotely, but I have not yet explo
 
 **To reiterate: we keep the laser driver on at all times, but with its output current set to 0mA.  The current through the laser diode is equal to this 0mA offset plus the RF "mod" input, which is provided by the AWG.  This configuration allows us to control the diode entirely using the AWG.**
 
-The [laser diode datasheet is linked here](https://github.com/CosmiQuantum/MEMS_docs/blob/main/LOUD_optical/laser_diode_635nm.pdf)!!!  This gives us a maximum diode current of 59mA.  While setting up the driver, I did set a current limit.  But, I'm not sure this applies to the modulation input (and I don't want to test it).  So when we send AWG pulses, we need to be careful not to apply voltages greater than 0.39V.  Software controls should be put in place to prevent this. The AWG software code is designed to make it near-impossible for users to apply laser currents over 30mA.
+The [laser diode datasheet is linked here](https://github.com/CosmiQuantum/MEMS_docs/blob/main/LOUD_optical/laser_diode_635nm.pdf)!!!  The maximum diode current is 59mA.  While setting up the driver, I set the maximum current limit to 27.5mA.  But, I'm not sure this applies to the modulation input (and I don't want to test this).  So when we send AWG pulses, we need to be careful not to apply voltages greater than 0.39V.  Software controls should be put in place to prevent this. The AWG software code is designed to make it near-impossible for users to apply laser currents over 30mA.
 
 ### Recovering from power cycle
 The laser driver should be kept on at all times but set to 0mA.  If, for some reason, it is turned off, this procedure can be used to reset things.
