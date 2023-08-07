@@ -35,9 +35,10 @@ The laser driver should be kept on at all times but set to 0mA.  If, for some re
 | Enable Modulation Input | yes |
 | Switch Laser on When Starting | no |
 
-<img width="685" alt="laser_settings" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/4ddff3c5-79bf-48ea-94f7-606416e5d6c4">
+<img width="350" alt="laser_settings" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/4ddff3c5-79bf-48ea-94f7-606416e5d6c4">
 
 * Note that our maximum current is 59mA, so the current limit can be increased if needed.
+  
 3. Check that AWG is connected to laser driver RF mod input (SMA in back)
 4. Set laser driver to 0mA.  Turn on TEC, then turn on laser output.  ***Note that this will give a “current underflow” warning message, but this is fine (since we’re using the AWG to supply current)***
 
