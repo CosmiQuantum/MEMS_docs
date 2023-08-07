@@ -25,6 +25,7 @@ The [laser diode datasheet is linked here](https://github.com/CosmiQuantum/MEMS_
 The laser driver should be kept on at all times but set to 0mA.  If, for some reason, it is turned off, this procedure can be used to reset things.
 1. Ensure that silver key is inserted in the back of the driver, and turn it on.
 2. Click "red" ``Laser Driver Setup`` button in top left and check settings:
+
 | Setting    | Value |
 | -------- | ------- |
 | Laser Polarity | Anode Grounded (AG) |
