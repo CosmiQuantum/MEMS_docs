@@ -8,7 +8,7 @@ Laser Driver: https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=7752&pn=
 Laser Diode: https://www.thorlabs.com/thorproduct.cfm?partnumber=LPS-635-FC
 
 ### Laser Desription
-The laser operates in two modes: CW and pulsed.  A physical hardware change is required to switch the driver between these modes.  This project operates exclusively in the pulsed mode.
+The Thorlabs driver operates in two modes: CW and pulsed.  In CW mode, the driver ouptuts a constant DC current.  In "pulsed" mode, the driver outputs a constant DC current PLUS whatever input you provide to the "RF mod" SMA port.  If the input you provide is DC, then the laser output will be DC.  If the input you provide is pulsed, then the laser output will be pulsed.  A physical hardware change is required to switch the driver between these modes.  Since we are using an AWG to drive the laser, this project operates exclusively in the pulsed mode (...if we were to put the Thorlabs driver in "CW" mode, it would ignore the input from our AWG).
 
 While operating in pulsed mode, the laser driver outputs a current of  $I = I_0 + I_{mod}$.  Where:
   * $I$ is the output current, seen by the laser diode
