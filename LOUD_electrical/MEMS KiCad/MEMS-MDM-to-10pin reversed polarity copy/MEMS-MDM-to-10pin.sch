@@ -1,0 +1,256 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:DB25_Female_MountingHoles J1
+U 1 1 64895DF0
+P 4700 2750
+F 0 "J1" H 4880 2752 50  0000 L CNN
+F 1 "DB25_Female_MountingHoles" H 4880 2661 50  0000 L CNN
+F 2 "digikey_MDM_182-25FE-ND:digikey_MDM_182-25FE-ND" H 4700 2750 50  0001 C CNN
+F 3 " ~" H 4700 2750 50  0001 C CNN
+	1    4700 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J3
+U 1 1 648A4E0E
+P 5400 1950
+F 0 "J3" H 5428 1976 50  0000 L CNN
+F 1 "GND" H 5428 1885 50  0000 L CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 5400 1950 50  0001 C CNN
+F 3 "~" H 5400 1950 50  0001 C CNN
+	1    5400 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J11
+U 1 1 648B4270
+P 5800 5600
+F 0 "J11" H 5828 5626 50  0000 L CNN
+F 1 "GND" H 5828 5535 50  0000 L CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 5800 5600 50  0001 C CNN
+F 3 "~" H 5800 5600 50  0001 C CNN
+	1    5800 5600
+	0    1    1    0   
+$EndComp
+NoConn ~ 4700 1350
+$Comp
+L dk_Rectangular-Connectors-Headers-Male-Pins:3220-10-0100-00 J5
+U 1 1 648DC9F3
+P 5900 5050
+F 0 "J5" V 5953 4772 60  0000 R CNN
+F 1 "3220-10-0100-00" V 5847 4772 60  0000 R CNN
+F 2 "digikey_10pin_1175-1627-ND:digikey_10pin_1175-1627-ND" H 6100 5250 60  0001 L CNN
+F 3 "http://cnctech.us/pdfs/3220-XX-0100-00.pdf" V 6100 5350 60  0001 L CNN
+F 4 "1175-1627-ND" H 6100 5450 60  0001 L CNN "Digi-Key_PN"
+F 5 "3220-10-0100-00" H 6100 5550 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 6100 5650 60  0001 L CNN "Category"
+F 7 "Rectangular Connectors - Headers, Male Pins" H 6100 5750 60  0001 L CNN "Family"
+F 8 "http://cnctech.us/pdfs/3220-XX-0100-00.pdf" H 6100 5850 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cnc-tech/3220-10-0100-00/1175-1627-ND/3883661" H 6100 5950 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN HEADER VERT 10POS 1.27MM" H 6100 6050 60  0001 L CNN "Description"
+F 11 "CNC Tech" H 6100 6150 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6100 6250 60  0001 L CNN "Status"
+	1    5900 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J2
+U 1 1 648E7E0F
+P 5700 3650
+F 0 "J2" H 5728 3676 50  0000 L CNN
+F 1 "X+" H 5728 3585 50  0000 L CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 5700 3650 50  0001 C CNN
+F 3 "~" H 5700 3650 50  0001 C CNN
+	1    5700 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J6
+U 1 1 648E8EC0
+P 5800 3050
+F 0 "J6" H 5828 3076 50  0000 L CNN
+F 1 "X-" H 5828 2985 50  0000 L CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 5800 3050 50  0001 C CNN
+F 3 "~" H 5800 3050 50  0001 C CNN
+	1    5800 3050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5700 5250 5700 5400
+Wire Wire Line
+	5700 5400 5800 5400
+Wire Wire Line
+	5800 5400 5800 5250
+Wire Wire Line
+	5800 5400 5900 5400
+Wire Wire Line
+	5900 5400 5900 5250
+Connection ~ 5800 5400
+Wire Wire Line
+	6000 5250 6000 5400
+Wire Wire Line
+	6000 5400 5900 5400
+Connection ~ 5900 5400
+$Comp
+L Connector:Conn_01x01_Female J4
+U 1 1 648A5D07
+P 5400 3150
+F 0 "J4" H 5428 3176 50  0000 L CNN
+F 1 "GND" H 5428 3085 50  0000 L CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 5400 3150 50  0001 C CNN
+F 3 "~" H 5400 3150 50  0001 C CNN
+	1    5400 3150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6100 4850
+NoConn ~ 6100 5250
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 648C92FC
+P 6750 1850
+F 0 "H1" H 6850 1896 50  0000 L CNN
+F 1 "MountingHole" H 6850 1805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 6750 1850 50  0001 C CNN
+F 3 "~" H 6750 1850 50  0001 C CNN
+	1    6750 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 648C9CAD
+P 6750 2300
+F 0 "H2" H 6850 2346 50  0000 L CNN
+F 1 "MountingHole" H 6850 2255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 6750 2300 50  0001 C CNN
+F 3 "~" H 6750 2300 50  0001 C CNN
+	1    6750 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 648CA59A
+P 6750 2750
+F 0 "H3" H 6850 2796 50  0000 L CNN
+F 1 "MountingHole" H 6850 2705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 6750 2750 50  0001 C CNN
+F 3 "~" H 6750 2750 50  0001 C CNN
+	1    6750 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 648CADE9
+P 6750 3250
+F 0 "H4" H 6850 3296 50  0000 L CNN
+F 1 "MountingHole" H 6850 3205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 6750 3250 50  0001 C CNN
+F 3 "~" H 6750 3250 50  0001 C CNN
+	1    6750 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 5400 5700 5400
+Connection ~ 5700 5400
+Wire Wire Line
+	5000 1950 5200 1950
+Wire Wire Line
+	5000 2550 5200 2550
+Wire Wire Line
+	5000 3150 5200 3150
+Wire Wire Line
+	5000 3750 5200 3750
+NoConn ~ 5000 1550
+NoConn ~ 5000 1750
+NoConn ~ 5000 2150
+NoConn ~ 5000 2350
+NoConn ~ 5000 2750
+NoConn ~ 5000 2950
+NoConn ~ 5000 3350
+NoConn ~ 5000 3550
+$Comp
+L Connector:Conn_01x01_Female J9
+U 1 1 649BC6FA
+P 6250 2050
+F 0 "J9" H 6278 2076 50  0000 L CNN
+F 1 "Y+" H 6278 1985 50  0000 L CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 6250 2050 50  0001 C CNN
+F 3 "~" H 6250 2050 50  0001 C CNN
+	1    6250 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 3750 5200 3150
+Connection ~ 5200 3150
+Wire Wire Line
+	5200 2550 5200 3150
+Wire Wire Line
+	5200 2550 5200 1950
+Connection ~ 5200 2550
+Connection ~ 5200 1950
+Wire Wire Line
+	5800 4850 5800 3250
+Wire Wire Line
+	6000 4850 6000 2050
+Wire Wire Line
+	5900 2650 5900 4850
+$Comp
+L Connector:Conn_01x01_Female J7
+U 1 1 648E952C
+P 5900 2450
+F 0 "J7" H 5928 2476 50  0000 L CNN
+F 1 "Y-" H 5928 2385 50  0000 L CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 5900 2450 50  0001 C CNN
+F 3 "~" H 5900 2450 50  0001 C CNN
+	1    5900 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5700 3850 5700 3800
+Wire Wire Line
+	5000 3850 5700 3850
+Connection ~ 5700 3850
+Wire Wire Line
+	5700 3850 5700 4850
+Wire Wire Line
+	5250 5400 5250 3750
+Wire Wire Line
+	5250 3750 5200 3750
+Connection ~ 5200 3750
+Wire Wire Line
+	5000 2050 6000 2050
+Connection ~ 6050 2050
+Wire Wire Line
+	6050 2050 6100 2050
+Wire Wire Line
+	5800 3250 5000 3250
+Connection ~ 5800 3250
+Wire Wire Line
+	5000 2650 5900 2650
+Connection ~ 5900 2650
+NoConn ~ 5000 1650
+NoConn ~ 5000 1850
+NoConn ~ 5000 2250
+NoConn ~ 5000 2450
+NoConn ~ 5000 2850
+NoConn ~ 5000 3050
+NoConn ~ 5000 3450
+NoConn ~ 5000 3650
+Connection ~ 6000 2050
+Wire Wire Line
+	6000 2050 6050 2050
+NoConn ~ 5000 3950
+$EndSCHEMATC
