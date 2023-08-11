@@ -23,9 +23,10 @@ The following drawing shows the female MDM pin numbers.  On this cable, only the
 <img width="500" alt="mdm_male" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/ab0fa749-46c4-42ce-bc8e-8e8223b8816b">
 
 ### 10pin cable
-It is easiest to standardize the 10pin cable pinouts in reference to the red painted wire.  A drawing is shown below. In this drawing, the green box surrounding pin numbers indicates ground.
+It is easiest to standardize the 10pin cable pinouts in reference to the red painted wire.  A drawing is shown below. In this drawing, the green box surrounding pin numbers 3, 5, 7, and 9 indicates ground.  Pins 1 and 2 are floating.
 
-<img width="389" alt="10pin" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/7c4fd8cd-eed8-45f3-8a7a-b792b0689b52">
+<img width="400" alt="10pin" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/531061a3-199e-4044-9ff1-49556b1c8b0f">
+
 
 For more information about orientation of 10pin cables, see the [MEMS pinouts readme](https://github.com/CosmiQuantum/MEMS_docs/blob/main/LOUD_electrical/MEMS_pinouts.md).
 # Other notes
