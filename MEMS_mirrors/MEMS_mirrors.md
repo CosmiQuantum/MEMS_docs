@@ -53,10 +53,8 @@ A sample datasheet is included below.  I've highlighted the relevant parameters.
 When we initiailzie a mirror/driver connection, we need to provide three quantities:
 * `Vbias` This is the baseline bias voltage that is applied when you turn HV (high voltage) on.  This serves as the zero point positiion for the mirror.
 * `VdifferenceMax` This is the maximum voltage difference between each set of control lines.  The datasheet provides two specs for this number (one for the x-direction, and one for y).  The MEMS driver box only uses one value.  I just pick the lower of the two numbers to provide as an argument.
-* `HardwareFilterBW` It is important to change this number when switching between large and small mirrors.  This is used to prevent the mirror from moving too fast and shaking itself apart.  
+* `HardwareFilterBW` This is listed on the datasheet as ``LPF Cutoff Frequency``.  It is important to change this number when switching between large and small mirrors.  This is used to prevent the mirror from moving too fast and shaking itself apart.  
 
 In the Windows setup, these numbers need to be saved to at least 3 different locations (4 to be safe).  In the [usb serial control code](https://github.com/CosmiQuantum/MEMS_Ctrl), they only need to be provided once.  More information is provided in the software readmes.
-
-
 
 
