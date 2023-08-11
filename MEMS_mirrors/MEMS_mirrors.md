@@ -1,22 +1,28 @@
 # MEMS Mirrors FAQ
 I'm starting a document to serve as a reference for students using MEMS mirrors at FNAL.
 
-### MEMS Mirror Inventory
-HANNAH COMMENT ABOUT PROS AND CONS OF LARGE VS SMALL MIRRORS
+The MEMS (micro-electromechanical system) mirrors are purchased from [Mirrorcle Tech](https://www.mirrorcletech.com/wp/).  The deflection angle of the mirror is controlled using four DC high voltage inputs.  Setting these causes the circular center portion of the mirror to move in the $\pm X$ and $\pm Y$ directions.
 
+<img width="400" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/9a0255f7-31a6-41c2-b502-80f7a5c1a3a6">
+
+
+### MEMS Mirror Inventory
+We have purchased MEMS mirrors of two different sizes: 2mm and 4.6mm diameter.  The large mirrors make alignment easier, since they are a larger target.  When the spot is misaligned on the mirror, parasitic reflections are introduced (i.e. part of your spot will hit the reflective backboard on the mirrors, and will not move when you change mirror position.  These reflections will always be present at some location on your device, which pretty much kills whatever measurement you're trying to make).  Both the Lab A and LOUD setups have used large mirrors to avoid this issue.  The disadvantage of the larger mirror size is that scanning range and speed are restricted, and the mirrors are much more fragile.
+
+Images of the mirrors are included below:
 
 | 2mm non-cryo | 2mm cryo | 4.6mm cryo |
 | -------- | ------- | -------- |
 | <img width="98" alt="2mm_roomtemp" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/768bc744-fba1-444d-816d-5995c2e0a42f">| <img width="96" alt="2mm_cryo" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/680c64cc-0d65-477e-9ec7-d8f4b5113dee">| <img width="99" alt="4_6mm_Cryo" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/d732c35b-cfd0-47bb-a9a3-db2b9a7598e5"> |
 
-Note that the 4.6mm mirror shown above has a layer of kapton tape over its face.  The mirrors were all delivered with this tape.  
+*Note that the 4.6mm mirror shown above has a layer of kapton tape over its face.  The mirrors were all delivered with this tape.  
 The tape is not touching the face of the mirror; it is separated by a small piece of glass.  Before installing a mirror, this tape must be removed with tweezers 
-(ideally plastic tweezers for ESD reasons).
+(ideally plastic tweezers for ESD reasons).*
 
 A serial number is printed on the back of each mirror pcb.  Mirror locations have historically been
 tracked in [this spreadsheet](https://docs.google.com/spreadsheets/d/1SfAJXwR_5d47hqugquiN4ruBxzNecHy8UDuXBtk5U1g/edit#gid=0).  
 
-**For ease of access, notable serial numbers are included below:**
+**For ease of access, notable serial numbers are listed here:**
 | Serial Number | Purpose |
 | -------- | ------- |
 | S50500 | LOUD silicon chip |
@@ -42,9 +48,14 @@ Mirrors are individually calibrated with bias voltage recommendations.  These ar
 [FNAL_mirror_datasheets.zip](https://github.com/CosmiQuantum/MEMS_docs/blob/main/MEMS_mirrors/FNAL_mirror_datasheets.zip).  
 
 A sample datasheet is included below.  I've highlighted the relevant parameters.
-<img width="705" alt="datasheet" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/c5125d16-a371-4c28-9f78-e6707fcbf5fb">
+<img width="658" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/8fdf0875-aab2-4114-ba21-cded8f157483">
 
-When we initiailzie a mirror/driver connection, we need to provide two quantities:
+When we initiailzie a mirror/driver connection, we need to provide three quantities:
+* `Vbias` This is the baseline bias voltage that is applied when you turn HV (high voltage) on.  This serves as the zero point positiion for the mirror.
+* `VdifferenceMax` This is the maximum voltage difference between each set of control lines.  The datasheet provides two specs for this number (one for the x-direction, and one for y).  The MEMS driver box only uses one value.  I just pick the lower of the two numbers to provide as an argument.
+* `HardwareFilterBW` It is important to change this number when switching between large and small mirrors.  This is used to prevent the mirror from moving too fast and shaking itself apart.  
+
+In the Windows setup, these numbers need to be saved to at least 3 different locations (4 to be safe).  In the [usb serial control code](https://github.com/CosmiQuantum/MEMS_Ctrl), they only need to be provided once.  More information is provided in the software readmes.
 
 
 
