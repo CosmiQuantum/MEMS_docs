@@ -9,6 +9,9 @@
 *  list of all screws needed --> probably the most important part of this doc...!
 
 ## MEMS Box Parts and Assembly
+The following section contains assembly instructions for the MEMS enclosure.  
+
+
 ### Mechanical assembly
 First attach three side walls to the breadboard base.  The fourth wall is left off temporarily for ease of access.
 
@@ -69,6 +72,15 @@ extra screws can be placed in the slots for stability.
 ### Mouting stationary mirror and MEMS mirror
 The mirror mounts shown below include slots for angular rotational adjustments during mounting. 
 
+| Location | Screws | Count | Countersunk? |
+| -------- | ------- | ------- | ------- |
+| Stationary mirror rotation plate | M4 x 6mm | 3 | no |
+| Stationary mirror rotation plate | M4 x 6mm | 1 | yes |
+| MEMS mirror rotation plate | M4 x 6mm | 3 | no |
+| MEMS mirror rotation plate | M4 x 6mm | 1 | yes |
+| Stationary mirror to mount| M2 x 4mm | 4 | no |
+| MEMS mirror to mount | 0-80, 4mm length | 4 | no |
+
 <img width="300" alt="mirror_mounts" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/0128e768-d2c9-4692-8136-1d56caf76567">
 
 The stationary mirror is dropped into its holder.  A front plate is screwed over the top to hold it in.  Note that the cutout in the front plate is a rectangle and not a square. Calipers can 
@@ -96,13 +108,21 @@ The two mirrors have identical mount hole patterns.  To maximize scanning range,
 
 <img width="550" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/41a1ff5b-d197-4b25-990e-571dcfd72337">
 
+----
+
 ### DC electrical connection
 
 A similar taping procedure is used to prevent electrical shorts on the DC breakout board connection point on Wall \#2.  Once again, it's important to ensure that all exposed copper on both the outside and inner ridge is covered.  Once taping is complete, the breakout board can be mounted such that the MDM connector is located on the outside of the box, and the 10-pin connector faces inwards.  Either before or after mounting the board, you can connect the 10-pin ribbon cable from the board to the mirror.  Information about making these ribbon cables is included in the [MEMS pinouts README](https://github.com/CosmiQuantum/MEMS_docs/blob/main/LOUD_electrical/MEMS_pinouts.md)
 
+| Location | Screws | Count | Countersunk? |
+| -------- | ------- | ------- | ------- |
+| DC breakout to Wall 2 | M2 x 8mm | 4 | no |
+
 <img height="250" alt="breakout_board_mounting" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/7c24fbd1-b361-4693-9440-0a95fd27ab4d">
 <img height="250" alt="breakout_board_mounting" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/bbd0b8f7-2f81-4883-afee-c4580ad2fb1c">
 <img height="250" alt="ribbon_cable" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/5bdee800-1f4f-4f94-a6ed-78bd882532a7">
+
+----
 
 ### Focuser and optical connection
 
@@ -110,15 +130,43 @@ SAY SOMETHING ABOUT OPTICAL CHECKS BEFORE MOUNTING FOCUSER
 
 Next, we mount the focuser by inserting it through the wall into its mount housing.  It is sometimes helpful to loosen the housing screws a bit during this step.  Then, align the focuser back plate as shown below and tighten its mount screws to fix the focuser orientation in place.  Ideally we would use spring washers underneath these screws.
 
+| Location | Screws | Count | Countersunk? |
+| -------- | ------- | ------- | ------- |
+| Focuser back plate | M4 x 8mm | 2 | no |
+
 <img width="550" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/10eb2cfb-7783-4383-91dd-efbc5d98dac0">
 
+----
+
 ### Filter
+
+| Location | Screws | Count | Countersunk? |
+| -------- | ------- | ------- | ------- |
+| Focuser back plate | M3 x 20 (ish??) mm | 4 | yes |
+
+----
 
 ### Final assembly
 Finally, we attach Wall \#4 and the lid of the enclosure.  Then throw the box across the room.
 
+| Location | Screws | Count | Countersunk? |
+| -------- | ------- | ------- | ------- |
+| Lid to Wall 1 | M4 x 10mm | 3 | yes |
+| Lid to Wall 3 | M4 x 10mm | 3 | yes |
+
 <img width="550" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/828c30aa-4419-4c9c-9ca7-ddaf3dfe39c2">
 
+----
+
+### Misc screw holes
+Threaded holes are placed along the exterior of the box to allow for attachment of thermalization straps and thermometry.
+
+| Location | Size | Count | Intention |
+| -------- | ------- | ------- | ------- |
+| Wall 2 | M4 | 7 | thermalization strap? |
+| Wall 3 | M3 | 1 | thermometer |
+
+----
 
 ## Hardware docs
 * link to CAD
