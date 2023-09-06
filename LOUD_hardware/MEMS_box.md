@@ -12,8 +12,18 @@
 ### Mechanical assembly
 First attach three side walls to the breadboard base.  The fourth wall is left off temporarily for ease of access.
 
-<img width="550" alt="walls" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/236ec04f-bc9a-413f-89f4-848ea010f5f3">
+| Location | Screws | Count | Comments |
+| -------- | ------- | ------- | ------- |
+| Wall 1 to breadboard | M4 x 20mm | 2 | countersunk |
+| Wall 2 to breadboard | M4 x 16mm | 3 | countersunk |
+| Wall 3 to breadboard | M4 x 16mm | 2 | countersunk |
+| Wall 4 to breadboard | M4 x 16mm | 3 | countersunk |
+| Wall 1 to Wall 2 | M4 x 16mm | 3 | countersunk |
+| Wall 1 to Wall 4 | M4 x 16mm | 3 | countersunk |
+| Wall 3 to Wall 2 | M3 x 12mm | 3 | countersunk |
+| Wall 3 to Wall 4 | M3 x 12mm | 3 | countersunk |
 
+<img width="550" alt="walls" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/236ec04f-bc9a-413f-89f4-848ea010f5f3">
 
 Then attach the focuser front plate to the focuser mount. We can leave the focuser out of the housing for now. 
 
@@ -76,6 +86,8 @@ SAY SOMETHING ABOUT OPTICAL CHECKS BEFORE MOUNTING FOCUSER
 Next, we mount the focuser by inserting it through the wall into its mount housing.  It is sometimes helpful to loosen the housing screws a bit during this step.  Then, align the focuser back plate as shown below and tighten its mount screws to fix the focuser orientation in place.  Ideally we would use spring washers underneath these screws.
 
 <img width="550" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/10eb2cfb-7783-4383-91dd-efbc5d98dac0">
+
+### Filter
 
 ### Final assembly
 Finally, we attach Wall \#4 and the lid of the enclosure.  Then throw the box across the room.
