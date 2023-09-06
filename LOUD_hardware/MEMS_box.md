@@ -12,7 +12,7 @@
 ### Mechanical assembly
 First attach three side walls to the breadboard base.  The fourth wall is left off temporarily for ease of access.
 
-| Location | Screws | Count | Comments |
+| Location | Screws | Count | Countersunk? |
 | -------- | ------- | ------- | ------- |
 | Wall 1 to breadboard | M4 x 20mm | 2 | countersunk |
 | Wall 2 to breadboard | M4 x 16mm | 3 | countersunk |
@@ -25,21 +25,46 @@ First attach three side walls to the breadboard base.  The fourth wall is left o
 
 <img width="550" alt="walls" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/236ec04f-bc9a-413f-89f4-848ea010f5f3">
 
+----
+
 Then attach the focuser front plate to the focuser mount. We can leave the focuser out of the housing for now. 
 
+| Location | Screws | Count | Countersunk? |
+| -------- | ------- | ------- | ------- |
+| Focuser mount front plate | M4 x 8mm | 2 | no |
+
 <img width="550" alt="focuser" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/004150d1-7dfc-43dc-9ed7-36facf4974ee">
+
+----
 
 Next, we screw the bottom layer of translation plates and focuser mount into the breadboard as shown here.  It's difficult to see from this angle, but the focuser mount screw holes are 
 positioned in the back corner of the breadboard.  The translation plates can either be mounted using either the dead-reckoning screw holes, or the translation slots.  In the past, the dead-reckoning 
 screw holes worked fine with the refractive setup (which is what we're currently using in LOUD with the silicon qubit).  Note that some of the screw holes lie underneath the next level of translation 
 plates.  These locations will require the use of countersunk screws.
 
+| Location | Screws | Count | Countersunk? |
+| -------- | ------- | ------- | ------- |
+| Focuser mount to breadboard | M4 x 8mm | 2 | no |
+| Stationary mirror bottom translation plate to breadboard | M4 x 8mm | 3 | no |
+| Stationary mirror bottom translation plate to breadboard | M4 x 8mm | 3 | yes |
+| MEMS mirror bottom translation plate to breadboard | M4 x 8mm | 2 | no |
+| MEMS mirror bottom translation plate to breadboard | M4 x 8mm | 3 | yes |
+
 <img width="550" alt="vertical_translation" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/ee5ecfdb-fd2a-4b89-b6eb-5651b3976186">
+
+----
 
 We repeat the process for the next layer of translation plates.  Once again, the plates can be mounted using either translation slots or dead-reckoning screw holes.  When the dead-reckoning holes are used, 
 extra screws can be placed in the slots for stability.
 
+| Location | Screws | Count | Countersunk? |
+| -------- | ------- | ------- | ------- |
+| Stationary mirror middle translation plate | M4 x 8mm | 4 | no |
+| MEMS mirror middle translation plate | M4 x 8mm | 5 | no |
+
 <img width="550" alt="horizontal_translation" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/b7b2cbb7-9c62-4210-a117-8a5be0d02626">
+
+----
 
 ### Mouting stationary mirror and MEMS mirror
 The mirror mounts shown below include slots for angular rotational adjustments during mounting. 
