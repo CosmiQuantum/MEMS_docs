@@ -1,18 +1,21 @@
-## Labeled picture of the box
+# MEMS Box Assembly
+This section contains assembly instructions for the MEMS enclosure.  Assembly instructions for the silicon qubit setup can he found [here in google drive](https://docs.google.com/document/d/1rCzVcsyPv5U-AN3GMhoRoeWomr2Zmh909wud3GUkeqE/edit).  CAD for the silicon qubit mount setup is posted on the [QSC confluence](https://confluence.qscience.org/pages/viewpage.action?spaceKey=1HTCSA&title=LOUD+Run+0). 
 
+The following wall numbering scheme is used throughout this document:
+
+<img width="400" alt="numbering_scheme" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/ea65af90-81f0-49c2-afe2-bdb39d038ee9">
 
 ## Components List
-* stationary mirror
-* IR filter
-* focuser
-* fancy spring washers
-*  list of all screws needed --> probably the most important part of this doc...!
+* Stationary Mirror, Thorlabs [BBSQ05-E02](https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=139&pn=BBSQ05-E02#2146)
+* IR filter, Thorlabs [FGS600S](https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=3695&pn=FGS600S#11363)
+* Refractive focuser, OZ Optics, part number for 635nm, 20cm focal length: [LPF-04-635-10/125-QM-10-200-18AS-35-3S-1PE-1-UNC-UVVIS-VAC](https://www.ozoptics.com/ALLNEW_PDF/DTS0060.pdf)
+* Spring washers, Seastrom [5807-4-1](https://www.seastrom-mfg.com/washerdetails.aspx?productNumber=5807-4-1)
+* [Screws list](https://docs.google.com/spreadsheets/d/1jb8EKiFIDPo3E_T_oqH2WZctS7mlKIRE4Pj4M6Au0no/edit#gid=0)
 
-## MEMS Box Parts and Assembly
-The following section contains assembly instructions for the MEMS enclosure.  
+----
 
+# Mechanical assembly instructions
 
-### Mechanical assembly
 First attach three side walls to the breadboard base.  The fourth wall is left off temporarily for ease of access.
 
 | Location | Screws | Count | Countersunk? |
@@ -126,9 +129,13 @@ A similar taping procedure is used to prevent electrical shorts on the DC breako
 
 ### Focuser and optical connection
 
-SAY SOMETHING ABOUT OPTICAL CHECKS BEFORE MOUNTING FOCUSER
-
-Next, we mount the focuser by inserting it through the wall into its mount housing.  It is sometimes helpful to loosen the housing screws a bit during this step.  Then, align the focuser back plate as shown below and tighten its mount screws to fix the focuser orientation in place.  Ideally we would use spring washers underneath these screws.
+Before installing the focuser, it is good to connect it to a laser and visually confirm the existence of a spot.  The FCPC focuser connection is finicky, so it's good to check that light is emerging from the focuser before packing it up.  To check for a spot:
+* turn on laser at highest possible setting
+* aim focuser at a table at varying heights
+* darken surrounding area to the best of your ability, either using a hand or the optical blanket
+It can be difficult to see the light at first, so don't panic if nothing is there.  A good sanity check is to aim the light into your phone camera.  When I place the focuser directly above my iphone 11's selfie camera, I can very clearly see a red circle of light. 
+  
+Once you confirm that the focuser is connected correctly, you can mount it by inserting it through the wall into its mount housing.  It is sometimes helpful to loosen the housing screws a bit during this step.  Then, align the focuser back plate as shown below and tighten its mount screws to fix the focuser orientation in place.  Ideally we would use spring washers underneath these screws.
 
 | Location | Screws | Count | Countersunk? |
 | -------- | ------- | ------- | ------- |
@@ -138,16 +145,8 @@ Next, we mount the focuser by inserting it through the wall into its mount housi
 
 ----
 
-### Filter
-
-| Location | Screws | Count | Countersunk? |
-| -------- | ------- | ------- | ------- |
-| Focuser back plate | M3 x 20 (ish??) mm | 4 | yes |
-
-----
-
 ### Final assembly
-Finally, we attach Wall \#4 and the lid of the enclosure.  Then throw the box across the room.
+Finally, we attach Wall \#4 and the lid of the enclosure.
 
 | Location | Screws | Count | Countersunk? |
 | -------- | ------- | ------- | ------- |
@@ -155,6 +154,22 @@ Finally, we attach Wall \#4 and the lid of the enclosure.  Then throw the box ac
 | Lid to Wall 3 | M4 x 10mm | 3 | yes |
 
 <img width="550" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/828c30aa-4419-4c9c-9ca7-ddaf3dfe39c2">
+
+----
+
+### Filter
+There are two slots in Wall \#1 for IR filtering of the laser beam.  The LOUD qubits setup uses the outer slot.  To install the filter, gently slide it into place.  Then, install the copper output plate using spring washers.  The output plate is designed to clamp the filter into place so that it can thermalize through Wall \#1.  We have been using [beryllium copper washer](https://www.seastrom-mfg.com/washerdetails.aspx?productNumber=5807-4-1) to ensure tight thermal contact.  It can sometimes be a bit difficult to get the washers to stay in place while screwing the output plate on.  I usually cut thin strips of kapton tape, and use them to hold the washers down.  Once the output plate is partially screwed in, I remove the tape with tweezers.  Some photos of this approach are included below.  This is probably unnecessary if you have two people present for this installation step.
+
+| Location | Screws | Count | Countersunk? |
+| -------- | ------- | ------- | ------- |
+| Focuser back plate | M3 x 20 (ish??) mm | 4 | yes |
+
+<img height="300" alt="taping" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/6d7a8090-2041-4a97-b377-89b9436773c3">
+<img height="300" alt="taping" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/6e6da4eb-0423-447b-8b61-48e466b08371">
+
+*(note that the photos above are from the KID version of this output plate, not the qubit one).* The qubit output plate installation assembly is shown below:
+
+<img width="400" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/07acae3a-eaff-4ef4-acf5-a8ee63730cad">
 
 ----
 
@@ -167,7 +182,3 @@ Threaded holes are placed along the exterior of the box to allow for attachment 
 | Wall 3 | M3 | 1 | thermometer |
 
 ----
-
-## Hardware docs
-* link to CAD
-* link to installation instructions
