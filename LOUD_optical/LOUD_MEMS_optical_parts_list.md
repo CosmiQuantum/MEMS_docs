@@ -4,9 +4,10 @@
 #### Current Setup (as of 8/6/2023):
 **Diagram:**
 
-<img width="700" alt="warm_setup" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/c876fbf8-30db-470e-8800-7bbbe340c72a">
+<img width="850" alt="warm_setup" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/c876fbf8-30db-470e-8800-7bbbe340c72a">
 
 **Parts list**
+
 AWG
 * Agilent A33220
 * Control code linked [here](https://github.com/CosmiQuantum/MEMS_Ctrl)
@@ -49,9 +50,10 @@ SMA/FCPC adapters
 
 #### Plans for Future Development
 **Diagram**
-Hannah add notes here!
 
-<img width="700" alt="future_warm_setup" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/444f12ab-402b-4892-8c10-4dbc75d32beb">
+Stella is currently developing a codebase that will allow us to replace the AWG with a DC-coupled output of the RFSoC board.  This will improve timing resolution of the laser pulses.  A sketch of the new setup is shown below:
+
+<img width="850" alt="future_warm_setup" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/444f12ab-402b-4892-8c10-4dbc75d32beb">
 
 ## Cold setup
 **Diagram:**
