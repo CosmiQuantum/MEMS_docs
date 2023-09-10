@@ -1,5 +1,5 @@
 # Camera Notes
-We use the [Thorlabs CS235MU camera](https://www.thorlabs.com/thorproduct.cfm?partnumber=CS235MU) for warm bench testing.  Windows control software is available for download on the thorlabs website, linked previously.  Note that the camera is moochrome, and you may need to play around with gain and display coloring to get good pictures of the beam.
+We use the [Thorlabs CS235MU camera](https://www.thorlabs.com/thorproduct.cfm?partnumber=CS235MU) for warm bench testing.  Windows control software is available for download on the thorlabs website, linked previously.  Note that the camera is monochrome, and you may need to play around with gain and display coloring to get good pictures of the beam.
 
 Notable camera specs are included here:
 
