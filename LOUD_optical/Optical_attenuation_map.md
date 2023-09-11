@@ -7,10 +7,11 @@ The purpose of this document is to create a reference for in-line optical compon
 | --- | --- | --- |
 | 1 | Warm filter bank (currently empty) | 100% |
 | 2 | Fridge patch cables | 50% |
-| 3 | Focuser coupling |
+| 3 | Focuser coupling | 1% |
 | 4 | MEMS enclosure | 98% |
 | 5 | IR Filter | 63% |
 | 6 | Device surface | ?% |
+| | **TOTAL** | 0.3087% | 
 
 
 # Reference Material / Commentary
