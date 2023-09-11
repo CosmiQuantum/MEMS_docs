@@ -93,4 +93,8 @@ FCPC focuser
 * 635nm, FCPC connection
 * Quantity = 1 (ordered 3 to have spare)
 
+Square IR Filter
+* Thorlabs part number FGS600S
+* https://www.thorlabs.com/thorproduct.cfm?partnumber=FGS600S
+* Sits in MEMS enclosure filter slot and is thermalized through Wall #1
 
