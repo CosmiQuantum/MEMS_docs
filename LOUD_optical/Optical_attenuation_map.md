@@ -26,7 +26,19 @@ Previously we had using an AWG to control our laser diode current setpoint.  In 
 
 <img width="450" alt="laser_diode" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/e05263c4-cedf-47f8-b3bf-66f3097733a7">
 
-To avoid fluctuations due to voltage noise, we want to operate the laser diode in the flat-top regime.  Let's target a current of 10-15mA for initial testing.
+To avoid fluctuations due to voltage noise, we want to operate the laser diode in the flat-top regime.  Let's target a current of 10-15mA for initial testing.  It's quite difficult to read an actual value of optical power in this regime.  We can use **0.1mW** as an upper bound approximation?
+
+$$ \lambda = 635 \times 10^{-9} $$
+
+$$ h = 6.625 \times 10^{-34} $$
+
+$$ P = 0.1 \times 10^{-3} W $$
+
+$$ \text{photon number per second} = \frac{P \cdot \lambda}{h \cdot c} =  \frac{(0.1\cdot10^{-3} J/s)(635\cdot10^{-9})m}{(6.625\cdot10^{-34}J/s)(3\cdot10^{8}m/s)} $$
+
+$$ = 3.194 \times 10^{14} \text{ per sec} $$
+
+Using the 0.3087% number from above and a 1us square pulse, **we get almost exactly $1 \times 10^{6}$ photons per pulse**, which is good enough for a first attempt at an approximation.  The folowing sections are used to justify the 0.3087% transmission.  
 
 ## Step One: Filter bank
 
