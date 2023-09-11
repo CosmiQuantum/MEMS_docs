@@ -44,9 +44,9 @@ Then attach the focuser front plate to the focuser mount. We can leave the focus
 ----
 
 Next, we screw the bottom layer of translation plates and focuser mount into the breadboard as shown here.  It's difficult to see from this angle, but the focuser mount screw holes are 
-positioned in the back corner of the breadboard.  The translation plates can either be mounted using either the dead-reckoning screw holes, or the translation slots.  In the past, the dead-reckoning 
+positioned in the back corner of the breadboard.  The translation plates can be mounted using either the dead-reckoning screw holes, or the translation slots.  In the past, the dead-reckoning 
 screw holes worked fine with the refractive setup (which is what we're currently using in LOUD with the silicon qubit).  Note that some of the screw holes lie underneath the next level of translation 
-plates.  These locations will require the use of countersunk screws.
+plates.  These locations will require countersunk screws.
 
 | Location | Screws | Count | Countersunk? |
 | -------- | ------- | ------- | ------- |
@@ -115,7 +115,7 @@ The two mirrors have identical mount hole patterns.  To maximize scanning range,
 
 ### DC electrical connection
 
-A similar taping procedure is used to prevent electrical shorts on the DC breakout board connection point on Wall \#2.  Once again, it's important to ensure that all exposed copper on both the outside and inner ridge is covered.  Once taping is complete, the breakout board can be mounted such that the MDM connector is located on the outside of the box, and the 10-pin connector faces inwards.  Either before or after mounting the board, you can connect the 10-pin ribbon cable from the board to the mirror.  Information about making these ribbon cables is included in the [MEMS pinouts README](https://github.com/CosmiQuantum/MEMS_docs/blob/main/LOUD_electrical/MEMS_pinouts.md)
+A similar taping procedure is used to prevent electrical shorts on the DC breakout board connection point on Wall \#2.  Once again, it's important to ensure that all exposed copper on both the outside and inner ridge is covered.  Once taping is complete, the breakout board can be mounted such that the MDM connector is located on the outside of the box, and the 10-pin connector faces inwards.  Either before or after mounting the board, you can connect the 10-pin ribbon cable from the board to the mirror.  Information about making these ribbon cables is included in the [MEMS pinouts README](https://github.com/CosmiQuantum/MEMS_docs/blob/main/LOUD_electrical/MEMS_pinouts.md).
 
 | Location | Screws | Count | Countersunk? |
 | -------- | ------- | ------- | ------- |
@@ -162,7 +162,7 @@ There are two slots in Wall \#1 for IR filtering of the laser beam.  The LOUD qu
 
 | Location | Screws | Count | Countersunk? |
 | -------- | ------- | ------- | ------- |
-| Focuser back plate | M3 x 20 (ish??) mm | 4 | yes |
+| Focuser back plate | M3 x 20 (ish?? though maybe less?) mm | 4 | yes |
 
 <img height="300" alt="taping" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/6d7a8090-2041-4a97-b377-89b9436773c3">
 <img height="300" alt="taping" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/6e6da4eb-0423-447b-8b61-48e466b08371">
