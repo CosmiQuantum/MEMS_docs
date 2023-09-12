@@ -1,8 +1,12 @@
-## LOUD Optical Attenuation Map
-The purpose of this document is to create a reference for in-line optical component transmission plots.
+## LOUD Optical Attenuation
+This document contains the datasheets & plots required to make a very rough approximation of laser optical output.  A drawing of the setup is included below for reference:
+
+<img width="400" alt="laser_diode" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/8a617a5b-f487-4ea1-8148-642fb0ae38bc">
+
+---
 
 ## Summary
-Using the numbers below, we can make a hand-wavy approximation of photon output of the laser diode:
+Using the following numbers, we can make a hand-wavy approximation of photon output of the laser diode:
 
 $$ \lambda = 635 \times 10^{-9} $$
 
@@ -60,7 +64,7 @@ There is some unknown attenuation through the [SMA fridge cabling](https://www.a
 The SMA optical patch cables have a core diameter of 100um.  The refractive focuser has a fiber core diameter of 10um.  The junction between the two will therefore have attenuate the beam by a factor of 100.  
 
 ## Step Four: Focuser and in-box attenuation
-There will be some attenuation at the surface of the MEMS and stationary mirrors.  The reflectance of the stationary mirror (thorlabs part number [BBSQ05-E02](https://www.thorlabs.com/thorproduct.cfm?partnumber=BBSQ05-E02) is about 99% at 635nm, as shown below.  The reflectance of the MEMS mirror is unknown to me.
+There will be some attenuation inside the focuser itself, and at the surface of the two mirrors.  The reflectance of the stationary mirror (thorlabs part number [BBSQ05-E02](https://www.thorlabs.com/thorproduct.cfm?partnumber=BBSQ05-E02) is about 99% at 635nm, as shown below.  The reflectance of the MEMS mirror is unknown to me.
 
 ![image](https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/163b1d4b-7876-4368-a7db-ff875d7bf625)
 
