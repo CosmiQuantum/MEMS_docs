@@ -23,6 +23,12 @@ A list of MDM pinpouts is included below.  The pins were chosen such that each c
 
 For clarity, a drawing of each connector is shown below.  In these drawings, the connection point of the MDM is facing out (i.e. it's as if you are touching the connector itself, and not its solder cups with a multimeter).
 
+#### Female Connector
+<img width="650" alt="female" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/3e00249b-bbcb-4c35-8dd5-41c5304ae647">
+
+#### Male Connector
+<img width="650" alt="male" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/69b41106-f843-426b-8378-2ecd20e44706">
+
 ## MEMS 10pin cables
 The 10 pin ribbon cables are homemade.  To put one together, cut a length of the grey plastic cables (part number unknown) and press a terminator on each end.  I suggest that you refer to a previously made cable to ensure that the orientation of the terminators with respect to one another is correct.  I've found that about 1/3 of the cables that I make using this method have some sort of short.  Before using the cable with a MEMS mirror, it's good to connect each end to a breakout board and beep it out with a multimeter.
 
@@ -33,13 +39,6 @@ Commercial 10pin ribbon cables have small notches on the terminators.  This ensu
 Some of the homemade ribbon cables do not have these notches.  I've tried to replace all homamde cables with these new terminators, but some old ones may linger.  Please try to check that a notch is present before you connect things. Additionally, some of the homemade terminators fall apart from time to time.  They are easy to fix.  To ensure that connections are made with the right orientation, I have adopted the following sharpie notation on all cables:
 
 <img width="1000" alt="convention" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/81c91fea-dc44-47b8-af83-c1ef3250fa99">
-
-
-#### Female Connector
-<img width="650" alt="female" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/3e00249b-bbcb-4c35-8dd5-41c5304ae647">
-
-#### Male Connector
-<img width="650" alt="male" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/69b41106-f843-426b-8378-2ecd20e44706">
 
 ## Commercial fischer cables
 This section contains information about commercial fischer cables currently in use in LOUD.  Note that there is a dedicated readme for the [homemade fischer cable](https://github.com/CosmiQuantum/MEMS_docs/blob/main/LOUD_electrical/Homemade_fischer.md).  
