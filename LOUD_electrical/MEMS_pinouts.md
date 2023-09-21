@@ -2,7 +2,7 @@
 A list of MEMS pinpouts is included below.  The pins were chosen such that each control line will fall into an MDM twisted pair with a ground.  All grounds are wired together at the breakout boards.  The grounds should also be connected to the shielding of the fischer cables.  Note that each cable type has a dedicated subsection with more information on pin numbering.
 
 
-| Driver box output | 10pin ribbon cable to breakout board | DB25 on breakout board | Fischer cable to fridge | MDM in fridge to breakout board | 10pin ribbon cable from board to mirror |
+| Driver box output | 10pin ribbon cable to breakout board | DB25 on breakout board | Fischer cable to fridge | MDM in fridge to breakout board (both ends) | 10pin ribbon cable from board to mirror |
 | --- | --- | --- | --- | --- | --- |
 | GND | 3, 5, 7, 9 | 3, 6, 9, 12 | 5, 11, 17, 23 | 3, 6, 9, 12 | 3, 5, 7, 9 |
 | Y+ | 4 | 16 | 6 | 16 | 4 |
@@ -13,7 +13,7 @@ A list of MEMS pinpouts is included below.  The pins were chosen such that each 
 ---
 
 ## MEMS MDM pinouts
-In the fischer cable setup currently installed with the silicon qubit, the pinout should be the same for all MDM connectors in the chain.  Note that the pin numbering of the female connectors is mirrored. 
+In the fischer cable setup currently installed with the silicon qubit, the pinout should be the same for all MDM connectors in the chain. 
 
 | Pin | Purpose | 
 | --- | --- | 
@@ -26,7 +26,7 @@ In the fischer cable setup currently installed with the silicon qubit, the pinou
 | 22 | X- |
 | 25 | X+ |
 
-For clarity, a drawing of each connector is shown below.  In these drawings, the connection point of the MDM is facing out- it's as if you are touching the connector (and not its solder cups) with a multimeter.
+For clarity, a drawing of each connector is shown below.  Note the numbering convention of the female connectors is mirrored.  In these drawings, the connection point of the MDM is facing out- it's as if you are touching the connector (and not its solder cups) with a multimeter.
 
 #### Female Connector
 <img width="650" alt="female" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/3e00249b-bbcb-4c35-8dd5-41c5304ae647">
@@ -106,9 +106,9 @@ The fischer cable shielding is not wired to its casing, meaning it needs to be g
 
 ### Background
 
-Breakout boards are used to convert to and from the MEMS 10pin ribbon cables.  Originally the boards were purchased from mirrorcle, but I made a knock-off version in KiCad so that we could quickly and cheaply order them through [OSHpark](https://oshpark.com/).  These files are posted to this github, along with footprints and CAD of the mount components listed in the table below. 
+Breakout boards are used to convert to and from the MEMS 10pin ribbon cables.  Originally the boards were purchased from mirrorcle, but I made a knock-off version in KiCad so that we could quickly and cheaply order them through [OSHpark](https://oshpark.com/).  These files are posted to this github, along with footprints and CAD of the components listed in the table below. 
 
-There are two board designs- one converts the 10-pin cable to a female MDM, the other converts it to a female D-sub.  Each version has a standard and "INVERTED" version.  When correctly soldered, the standard version follows the previously described MEMS pinout scheme.  The "INVERTED" version flips the polarity, meaning that the female 25-pin connector will actually take on the male pin assignments.  
+There are two board designs- one converts the 10-pin cable to a female MDM, the other converts it to a female D-sub.  Each design has a standard and "INVERTED" version.  When correctly soldered, the standard version follows the previously described MEMS pinout scheme.  The "INVERTED" version flips the polarity, meaning that the female 25-pin connector will actually take on the male pin assignments.  
 
 If you (the person soldering) don't like the intended polarity of a board, there are two ways that you can flip it: either solder a male 25-pin connector to the board, or mount the female connector on the "wrong" side.
 
@@ -158,10 +158,10 @@ A list of components is included here:
 
 <img width="300" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/31ef05d2-e6fa-4827-afe5-5503f9c197b6">
 
-The wiring of this board is a bit more complicated to allow for ground noise debugging.  There are six surface mount resistor mount slots on the board.  These are intended to be used as manual soldered switches or break points.  During standard operation, most of them should be shorted with a solder bridge (a zero ohm resistor is also fine).  The resistors are used for four purposes:
+The wiring of this board is a bit more complicated to allow for ground noise debugging.  There are six surface mount resistor mount slots on the board.  These are intended to be used as manual soldered switches / break points.  During standard operation, most of them should be shorted with a solder bridge (a zero ohm resistor is also fine).  The resistors are used for four purposes:
 * Three of the resistors can be used to isolate the four MEMS ground wires.  Disconnecting any of these resistors will cause one or more of the D-sub grounds to be floating / disconnected from the 10pin cable.  These should be shorted for normal MEMS operation.
 * Once the D-sub grounds are connected to one another, a single resistor is used to connect them to the 10-pin ground wires.  This should be shorted for normal MEMS operation.
-* A resistor can be used to connect all the shared 10-pin shared grounds to pin #14 of the D-sub cable.  When the previous resistor is shorted, all grounds are connected to one another and D-sub pin #14.  Historically, I've left this resistor open except while debugging.
+* A resistor can be used to connect the shared grounds to pin #14 of the D-sub cable.  Historically, I've left this resistor open except while debugging.
 * A final resistor can be used used to ground pin #13 of the female connector.  In our case, this is connected to the fischer cable shielding. This should be shorted when fischer cables are in use.
 
 </br> 
@@ -192,7 +192,7 @@ The wiring of this board is a bit more complicated to allow for ground noise deb
 # Other
 
 ## Homemade divider breakout board
-The MEMS driver box can output 180+ volts on each of the DC control lines.  This is fine for most multimeters, but not for oscilloscopes (the older ones in lab G are rated for 120V).  Sometimes it's useful to look at the MEMS signal in the time domain.  In the past we've done this while debugging grounding issues and unstable mirror behavior.  I soldered a breakout board with voltage dividers placed on the signal wires that can be used to connect the driver to an oscilloscope.  A schematic of the board is shown here:con
+The MEMS driver box can output 180+ volts on each of the DC control lines.  This is fine for most multimeters, but not for oscilloscopes (the older ones in lab G are rated for 120V).  Sometimes it's useful to look at the MEMS signal in the time domain.  In the past we've done this while debugging grounding issues and unstable mirror behavior.  I soldered a breakout board with voltage dividers placed on the signal wires that can be used to connect the driver to an oscilloscope.  A schematic of the board is shown here:
 
 <img width="750" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/ef7a30c1-6173-4ae6-96d2-a1f38a4b94f5">
 
