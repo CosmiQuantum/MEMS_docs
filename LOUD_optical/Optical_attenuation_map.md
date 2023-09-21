@@ -55,10 +55,15 @@ It is possible to use an in-line filter bank with ND filters at the warm input t
 
 ## Step Two: Cabling through fridge
 
-There is some unknown attenuation through the [SMA fridge cabling](https://www.accuglassproducts.com/connector-connector-cable-100-uv-vis).  If I had to pick a number, I would say that transmission is something like 50%, based on camera imaging before and after routing the beam through the fridge.  This is a very rough approximation.  Patch cable lengths are shown here:
+There is some unknown attenuation through the [SMA fridge cabling](https://www.accuglassproducts.com/connector-connector-cable-100-uv-vis).  If I had to pick a number, I would say that transmission is something like 50%, based on camera imaging before and after routing the beam through the fridge.  This is a very rough approximation.  Patch cable lengths are included below:
 
-<img width="595" alt="laser_diode" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/86f8daba-457f-4345-8ebd-3cfe83ff5917">
-
+| Location | Length |
+| --- | -- |
+| 300K to 50K | 19" |
+| 50K to 4K | 7.5" |
+| 4K to 1K | 6" |
+| 1K to cold | 6" |
+| cold to mc | 9" |
 
 ## Step Three: Coupling to Focuser 
 The SMA optical patch cables have a core diameter of 100um.  The refractive focuser has a fiber core diameter of 10um.  The junction between the two will therefore have attenuate the beam by a factor of 100.  
