@@ -4,11 +4,11 @@ A list of MEMS pinpouts is included below.  The pins were chosen such that each 
 
 | Driver box output | 10pin ribbon cable to breakout board | DB25 on breakout board | Fischer cable to fridge | MDM in fridge to breakout board | 10pin ribbon cable from board to mirror |
 | --- | --- | --- | --- | --- | --- |
-| GND | 3, 5, 7, 9 | 3, 6, 9, 12 | see below | 3, 6, 9, 12 | 3, 5, 7, 9 |
-| Y+ | 4 | 16 | see below | 16 | 4 |
-| Y- | 6 | 19 | see below | 19 | 6 |
-| X- | 8 | 22 | see below | 22 | 8 |
-| X+ | 10 | 25 | see below | 25 | 10 |
+| GND | 3, 5, 7, 9 | 3, 6, 9, 12 | 5, 11, 17, 23 | 3, 6, 9, 12 | 3, 5, 7, 9 |
+| Y+ | 4 | 16 | 6 | 16 | 4 |
+| Y- | 6 | 19 | 12 | 19 | 6 |
+| X- | 8 | 22 | 18 | 22 | 8 |
+| X+ | 10 | 25 | 24 | 25 | 10 |
 
 ---
 
@@ -106,7 +106,7 @@ The fischer cable shielding is not wired to its casing, meaning it needs to be g
 
 ### Background
 
-Breakout boards are used to convert to and from the MEMS 10pin ribbon cables.  Originally the boards were purchased from mirrorcle, but I made a knock-off version in KiCad so that we could quickly and cheaply order them through [OSHpark](https://oshpark.com/).  These files are posted to this github, along with footprint and CAD of the mount components listed in the table below. 
+Breakout boards are used to convert to and from the MEMS 10pin ribbon cables.  Originally the boards were purchased from mirrorcle, but I made a knock-off version in KiCad so that we could quickly and cheaply order them through [OSHpark](https://oshpark.com/).  These files are posted to this github, along with footprints and CAD of the mount components listed in the table below. 
 
 There are two board designs- one converts the 10-pin cable to a female MDM, the other converts it to a female D-sub.  Each version has a standard and "INVERTED" version.  When correctly soldered, the standard version follows the previously described MEMS pinout scheme.  The "INVERTED" version flips the polarity, meaning that the female 25-pin connector will actually take on the male pin assignments.  
 
@@ -158,7 +158,7 @@ A list of components is included here:
 
 <img width="300" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/31ef05d2-e6fa-4827-afe5-5503f9c197b6">
 
-The wiring of this board is a bit more complicated to allow for ground noise debugging.  Theere are six surface mount resistor mount slots on the board.  These are intended to be used as manual soldered switches or break points.  During standard operation, most of them should be shorted with a solder bridge (a zero ohm resistor is also fine).  The resistors are used for four purposes:
+The wiring of this board is a bit more complicated to allow for ground noise debugging.  There are six surface mount resistor mount slots on the board.  These are intended to be used as manual soldered switches or break points.  During standard operation, most of them should be shorted with a solder bridge (a zero ohm resistor is also fine).  The resistors are used for four purposes:
 * Three of the resistors can be used to isolate the four MEMS ground wires.  Disconnecting any of these resistors will cause one or more of the D-sub grounds to be floating / disconnected from the 10pin cable.  These should be shorted for normal MEMS operation.
 * Once the D-sub grounds are connected to one another, a single resistor is used to connect them to the 10-pin ground wires.  This should be shorted for normal MEMS operation.
 * A resistor can be used to connect all the shared 10-pin shared grounds to pin #14 of the D-sub cable.  When the previous resistor is shorted, all grounds are connected to one another and D-sub pin #14.  Historically, I've left this resistor open except while debugging.
@@ -166,7 +166,7 @@ The wiring of this board is a bit more complicated to allow for ground noise deb
 
 </br> 
 
-**Our versioin of the board:**
+**Our version of the board:**
 |  | Standard Polarity | Inverted Polarity |
 | --- | --- | --- |
 | **Board** | <img width="550" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/eae5819c-0abb-4cbb-84a0-fd74e080f9f0"> |  <img width="550" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/6fc8ccf4-c083-47cc-8e06-183fccac6ba9"> |
