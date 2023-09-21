@@ -102,23 +102,94 @@ The fischer cable shielding is not wired to its casing, meaning it *needs* to be
 
 ---
 
-## Breakout boards
-Breakout boards are used to convert to 10pin ribbon cables.  A list of components is included here:
+# Breakout boards
 
-### Digikey Parts List
+### Background
+
+Breakout boards are used to convert to and from the MEMS 10pin ribbon cables.  Originally the boards were purchased from mirrorcle, but I made a knock-off version in KiCad so that we could quickly and cheaply order them through [OSHpark](https://oshpark.com/).  These files are posted to this github, along with footprint and CAD of the mount components listed in the table below. 
+
+There are two board designs- one converts the 10-pin cable to a female MDM, the other converts it to a female D-sub.  Each version has a standard and "INVERTED" version.  When correctly soldered, the standard version follows the previously described MEMS pinout scheme.  The "INVERTED" version flips the polarity, meaning that the female 25-pin connector will actually take on the male pin assignments.  
+
+If you (the person soldering) don't like the intended polarity of a board, there are two ways that you can flip it: either solder a male 25-pin connector to the board, or mount the female connector on the "wrong" side.
+
+A list of components is included here:
+
 | Image | Description | Digikey Part Number | Links |
 | --- | --- | --- | --- | 
-| <img width="120" alt="10pin" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/676825bc-4fe1-4be1-8b88-135359bcf621"> | 10 pin terminator with notch | 3230-10-0102-00-ND | [Digikey](https://www.digikey.com/en/products/detail/cnc-tech/3230-10-0102-00/3883464?s=N4IgTCBcDaIMxjgBgLQEZVI2FTUDkAREAXQF8g), ([KiCad](https://app.ultralibrarian.com/details/2CCEEED1-05B2-11EB-9033-0A34D6323D74/CNC-Tech/3220-10-0100-00?ref=digikey)) |
+| <img width="120" alt="10pin_cable" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/676825bc-4fe1-4be1-8b88-135359bcf621"> | 10 pin terminator with notch for cable-making | 3230-10-0102-00-ND | [Digikey](https://www.digikey.com/en/products/detail/cnc-tech/3230-10-0102-00/3883464?s=N4IgTCBcDaIMxjgBgLQEZVI2FTUDkAREAXQF8g) |
+| <img width="120" alt="10pin" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/055e20f8-a7b1-4468-9121-20dab27e3fbe"> | 10 pin connector pcb mount with notch | 3220-10-0100-00 CNC | [Digikey](https://www.digikey.com/en/products/detail/cnc-tech/3220-10-0100-00/3883661), ([KiCad](https://app.ultralibrarian.com/details/2CCEEED1-05B2-11EB-9033-0A34D6323D74/CNC-Tech/3220-10-0100-00?ref=digikey)) |
 | <img width="120" alt="db25" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/71488d4f-c9a4-481f-a29c-011ff4d94daf"> | DB25 female connector pcb mount | 182-25FE-ND | [Digikey](https://www.digikey.com/en/products/detail/norcomp-inc/182-025-213R531/858365), ([KiCad](https://app.ultralibrarian.com/details/E3E87A03-1040-11EC-9033-0A34D6323D74/Norcomp-Inc--/182-025-213R531?ref=digikey)) |
 | <img width="120" alt="mdm" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/76b6d032-ba5b-4588-9da3-b6642d2aefa9"> | MDM 25 pin female connector pcb mount | 380-025-213L001 | [Digikey](https://www.digikey.com/en/products/detail/norcomp-inc/380-025-213L001/2798600), ([KiCad](https://app.ultralibrarian.com/details/054A7CCB-1E3E-11EB-9033-0A34D6323D74/Norcomp-Inc--/380-025-213L001?ref=digikey)) | 
 
+</br> 
 
-### Commercial breakout board \#1
+## \#1: MDM Breakout Board
 
-### Commercial breakout board \#2
+**Commercial/mirrorcle's version of the board:**
 
-### Homemade divider breakout board
-The MEMS driver box can output 180+ volts on each of the DC control lines.  This is fine for most multimeters, but not for oscilloscopes (the older ones in lab G are rated for 120V).  Sometimes it's useful to look at the MEMS signal in the time domain.  In the past we've done this while debugging grounding issues and unstable mirror behavior.  I soldered a breakout board with voltage dividers placed on the signal wires that can be used to connect the driver to an oscilloscope.  A schematic of the board is shown here:
+<img height="150" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/1787dc92-14d8-40ea-b1e9-9268be7f406b"> 
+<img height="150" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/0492d877-a326-46de-801a-dad76433db9c">
+
+</br> 
+
+**Our version of the board:**
+
+| | Standard polarity | "Inverted" polarity | 
+| --- | --- | --- |
+| **Board** | <img width="330" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/a4083bfe-8fad-4299-9403-73fd7fdf2541"> | <img width="330" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/35a1b001-8dbf-4c2c-b65a-24a88341718a"> |
+| **Traces** |  |  |
+| **MDM soldering** | Female, front of board (same as commercial version shown above) | Female, front of board (same as commercial version shown above) |
+| **10pin soldering** | Back of board, notch facing up (same as commercial version shown above) | Back of board, notch facing down (rotated 180 degrees from commercial version) |
+
+</br> 
+
+**Notes:**
+* All grounds are wired together
+* Mount holes are floating, and are designed to mount with M2 screws to the hole pattern on the [MEMS box](https://github.com/CosmiQuantum/MEMS_docs/blob/main/LOUD_hardware/MEMS_box.md)
+* Text indicating board polarity is located at the top of the board, by the header
+
+</br> 
+
+## \#2: D-sub Breakout Board
+
+**Commercial version of the board:** 
+
+<img width="300" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/31ef05d2-e6fa-4827-afe5-5503f9c197b6">
+
+The wiring of this board is a bit more complicated to allow for ground noise debugging.  Theere are six surface mount resistor mount slots on the board.  These are intended to be used as manual soldered switches or break points.  During standard operation, most of them should be shorted with a solder bridge (a zero ohm resistor is also fine).  The resistors are used for four purposes:
+* Three of the resistors can be used to isolate the four MEMS ground wires.  Disconnecting any of these resistors will cause one or more of the D-sub grounds to be floating / disconnected from the 10pin cable.  These should be shorted for normal MEMS operation.
+* Once the D-sub grounds are connected to one another, a single resistor is used to connect them to the 10-pin ground wires.  This should be shorted for normal MEMS operation.
+* A resistor can be used to connect all the shared 10-pin shared grounds to pin #14 of the D-sub cable.  When the previous resistor is shorted, all grounds are connected to one another and D-sub pin #14.  Historically, I've left this resistor open except while debugging.
+* A final resistor can be used used to ground pin #13 of the female connector.  In our case, this is connected to the fischer cable shielding. This should be shorted when fischer cables are in use.
+
+</br> 
+
+**Our versioin of the board:**
+|  | Standard Polarity | Inverted Polarity |
+| --- | --- | --- |
+| **Board** | <img width="550" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/eae5819c-0abb-4cbb-84a0-fd74e080f9f0"> |  <img width="550" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/6fc8ccf4-c083-47cc-8e06-183fccac6ba9"> |
+| **Traces** | <img width="550" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/514d041d-93ee-4fb4-98d8-df59ca176f31"> | <img width="550" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/6c312daf-2fba-400a-a922-cad8bde65466"> |
+| **D-Sub soldering** | Female connector, front of board  | Front of board | 
+| **10-pin soldering** |  Female connector, front of board, notch facing up | Front of board, notch facing up |
+| **Connect 25pin grounds to one another** | right three zero ohm resistors on back of board| left three zero ohm resistors on back of board |
+| **Connect 25pin grounds to 10pin grounds** (note that 25pin grounds must first be connected to one another) | upper resistor on front of board | upper resistor on front of board |
+| **Connect 10pin grounds to floating pin of D-sub** | lower resistor on front of board -- if soldered as instructed, this goes to female pin #14 | lower resistor on front of board  -- if soldered as instructed, this goes to female pin #25 |
+| **Ground pin #13** | far left resistor on back of board | far right resistor on back of board |
+
+</br> 
+
+**Notes:** 
+* I just noticed that I put the pin labels on the wrong layer of the inverted board.  Oops.  Someone should take a sharpie and write in order ``X+, X-, Y-, Y+`` on the front of the board.  The labeling order should be opposite that of the "standard" D-sub breakout board.  The unlabeled pin on both boards is ground. This should be fixed for future iterations.
+* The D-sub connector is supposed to hang off the pcb a little bit- I tried to copy the design of the commercial board.  If people dislike this, it's pretty easy to change.
+
+</br> 
+
+---
+
+# Other
+
+## Homemade divider breakout board
+The MEMS driver box can output 180+ volts on each of the DC control lines.  This is fine for most multimeters, but not for oscilloscopes (the older ones in lab G are rated for 120V).  Sometimes it's useful to look at the MEMS signal in the time domain.  In the past we've done this while debugging grounding issues and unstable mirror behavior.  I soldered a breakout board with voltage dividers placed on the signal wires that can be used to connect the driver to an oscilloscope.  A schematic of the board is shown here:con
 
 <img width="750" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/ef7a30c1-6173-4ae6-96d2-a1f38a4b94f5">
 
