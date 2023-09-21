@@ -41,7 +41,7 @@ My numbering convention for the 10pin ribbon cables is shown here:
 
 <img width="600" alt="10pin" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/72dca59b-d6c1-4e92-9576-da10e95ae1ca">
 
-The 10 pin ribbon cables are homemade.  To put one together, cut a length of the grey plastic cables (part number unknown) and press a terminator on each end.  I suggest that you refer to a previously made cable to ensure that the orientation of the terminators with respect to one another is correct.  I've found that about 1/3 of the cables that I make using this method have some sort of short.  Before using the cable with a MEMS mirror, it's good to connect each end to a breakout board and beep it out with a multimeter.
+The 10 pin ribbon cables are homemade.  To put one together, cut a length of the grey plastic cable (part number unknown) and press a terminator on each end.  I suggest that you refer to a previously made cable to ensure that the orientation of the terminators with respect to one another is correct.  I've found that about 1/3 of the cables that I make using this method have some sort of short.  Before using the cable with a MEMS mirror, it's good to connect each end to a breakout board and beep it out with a multimeter.
 
 Commercial 10pin ribbon cables have small notches on the terminators.  This ensures that the connection polarity is correct.
 
@@ -96,7 +96,7 @@ The pinouts are also shown as drawings below, with labels on MEMS-specific pins.
 
 <img height="300" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/a7bda917-b3e5-45ef-898c-d2b11cc66449">
 
-The fischer cable shielding is not wired to its casing, meaning it *needs* to be grounded through pin \#13.  To ground the shielding, I soldered a jumper cable between pin #13 and MEMS ground on one of the breakout boards.  It has since been suggested that I instead solder the shielding to a flying lead, then clamp it directly to fridge ground, however I didn't have time to test this.
+The fischer cable shielding is not wired to its casing, meaning it needs to be grounded through pin \#13.  To ground the shielding, I soldered a jumper cable between pin #13 and MEMS ground on one of the breakout boards.  It has since been suggested that I instead solder the shielding to a flying lead, then clamp it directly to fridge ground, however I didn't have time to test this.
 
 <img width="350" alt="jumper_cable" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/3de55b7c-27e7-40b3-857b-84771b95ca1c">
 
@@ -131,6 +131,7 @@ A list of components is included here:
 <img height="150" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/0492d877-a326-46de-801a-dad76433db9c">
 
 </br> 
+</br> 
 
 **Our version of the board:**
 
@@ -146,6 +147,7 @@ A list of components is included here:
 **Notes:**
 * All grounds are wired together
 * Mount holes are floating, and are designed to mount with M2 screws to the hole pattern on the [MEMS box](https://github.com/CosmiQuantum/MEMS_docs/blob/main/LOUD_hardware/MEMS_box.md)
+* The footprint of the 10pin connector is drawn on the wrong side of the board
 * Text indicating board polarity is located at the top of the board, by the header
 
 </br> 
@@ -181,7 +183,8 @@ The wiring of this board is a bit more complicated to allow for ground noise deb
 **Notes:** 
 * I just noticed that I put the pin labels on the wrong layer of the inverted board.  Oops.  Someone should take a sharpie and write in order ``X+, X-, Y-, Y+`` on the front of the board.  The labeling order should be opposite that of the "standard" D-sub breakout board.  The unlabeled pin on both boards is ground. This should be fixed for future iterations.
 * The D-sub connector is supposed to hang off the pcb a little bit- I tried to copy the design of the commercial board.  If people dislike this, it's pretty easy to change.
-
+* Text indicating board polarity is located on the bottom of the board, by the date
+* 
 </br> 
 
 ---
