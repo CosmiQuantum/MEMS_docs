@@ -184,7 +184,7 @@ The wiring of this board is a bit more complicated to allow for ground noise deb
 * I just noticed that I put the pin labels on the wrong layer of the inverted board.  Oops.  Someone should take a sharpie and write in order ``X+, X-, Y-, Y+`` on the front of the board.  The labeling order should be opposite that of the "standard" D-sub breakout board.  The unlabeled pin on both boards is ground. This should be fixed for future iterations.
 * The D-sub connector is supposed to hang off the pcb a little bit- I tried to copy the design of the commercial board.  If people dislike this, it's pretty easy to change.
 * Text indicating board polarity is located on the bottom of the board, by the date
-* 
+  
 </br> 
 
 ---
