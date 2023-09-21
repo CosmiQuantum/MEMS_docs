@@ -138,7 +138,7 @@ A list of components is included here:
 | | Standard polarity | "Inverted" polarity | 
 | --- | --- | --- |
 | **Board** | <img width="330" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/a4083bfe-8fad-4299-9403-73fd7fdf2541"> | <img width="330" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/35a1b001-8dbf-4c2c-b65a-24a88341718a"> |
-| **Traces** |  |  |
+| **Traces** | <img width="330" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/54cb90ff-b21b-40f1-b0d0-60bf2cd7f727"> | <img width="330" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/a4a51678-c88b-43e3-8088-360cc480011b"> |
 | **MDM soldering** | Female, front of board (same as commercial version shown above) | Female, front of board (same as commercial version shown above) |
 | **10pin soldering** | Back of board, notch facing up (same as commercial version shown above) | Back of board, notch facing down (rotated 180 degrees from commercial version) |
 
@@ -173,10 +173,10 @@ The wiring of this board is a bit more complicated to allow for ground noise deb
 | **Traces** | <img width="550" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/514d041d-93ee-4fb4-98d8-df59ca176f31"> | <img width="550" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/6c312daf-2fba-400a-a922-cad8bde65466"> |
 | **D-Sub soldering** | Female connector, front of board  | Front of board | 
 | **10-pin soldering** |  Female connector, front of board, notch facing up | Front of board, notch facing up |
-| **Connect 25pin grounds to one another** | right three zero ohm resistors on back of board| left three zero ohm resistors on back of board |
+| **Connect 25pin grounds to one another** | right three zero ohm resistors on back of board| right three zero ohm resistors on back of board |
 | **Connect 25pin grounds to 10pin grounds** (note that 25pin grounds must first be connected to one another) | upper resistor on front of board | upper resistor on front of board |
 | **Connect 10pin grounds to floating pin of D-sub** | lower resistor on front of board -- if soldered as instructed, this goes to female pin #14 | lower resistor on front of board  -- if soldered as instructed, this goes to female pin #25 |
-| **Ground pin #13** | far left resistor on back of board | far right resistor on back of board |
+| **Ground pin #13** | far left resistor on back of board | far left resistor on back of board |
 
 </br> 
 
