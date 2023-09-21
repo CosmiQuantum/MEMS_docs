@@ -172,7 +172,7 @@ The wiring of this board is a bit more complicated to allow for ground noise deb
 | **Board** | <img width="550" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/eae5819c-0abb-4cbb-84a0-fd74e080f9f0"> |  <img width="550" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/6fc8ccf4-c083-47cc-8e06-183fccac6ba9"> |
 | **Traces** | <img width="550" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/514d041d-93ee-4fb4-98d8-df59ca176f31"> | <img width="550" alt="image" src="https://github.com/CosmiQuantum/MEMS_docs/assets/80175523/6c312daf-2fba-400a-a922-cad8bde65466"> |
 | **D-Sub soldering** | Female connector, front of board  | Front of board | 
-| **10-pin soldering** |  Female connector, front of board, notch facing up | Front of board, notch facing up |
+| **10-pin soldering** |  Front of board, notch facing up | Front of board, notch facing up |
 | **Connect 25pin grounds to one another** | right three zero ohm resistors on back of board| right three zero ohm resistors on back of board |
 | **Connect 25pin grounds to 10pin grounds** (note that 25pin grounds must first be connected to one another) | upper resistor on front of board | upper resistor on front of board |
 | **Connect 10pin grounds to floating pin of D-sub** | lower resistor on front of board -- if soldered as instructed, this goes to female pin #14 | lower resistor on front of board  -- if soldered as instructed, this goes to female pin #25 |
